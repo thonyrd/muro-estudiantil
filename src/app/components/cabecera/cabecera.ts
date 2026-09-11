@@ -1,9 +1,16 @@
 import { Component } from '@angular/core';
 
 @Component({
-  imports: [],
   selector: 'app-cabecera',
-  styleUrl: './cabecera.css',
+  imports: [],
   templateUrl: './cabecera.html',
+  styleUrl: './cabecera.css'
 })
-export class Cabecera {}
+export class Cabecera {
+
+  titulo: string = 'Muro Escolar';
+
+  subtitulo: string =
+    'Informate sobre las actividades y talleres disponibles';
+
+}

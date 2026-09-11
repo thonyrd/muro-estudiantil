@@ -1,1 +1,104 @@
-<p>inscripcion works!</p>
+<section class="contenedor-pedido">
+
+  <h2>Hacer Pedido</h2>
+  <p>Complete los datos para registrar su pedido.</p>
+
+  <form
+    [formGroup]="formularioPedido"
+    (ngSubmit)="enviarPedido()">
+
+    <div class="campo">
+      <label for="nombre">Nombre</label>
+      <input
+        id="nombre"
+        type="text"
+        formControlName="nombre">
+
+      @if (
+        formularioPedido.controls.nombre.invalid &&
+        formularioPedido.controls.nombre.touched
+      ) {
+        <small class="error">
+          Ingrese un nombre válido de al menos 3 caracteres.
+        </small>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="correo">Correo electrónico</label>
+      <input
+        id="correo"
+        type="email"
+        formControlName="correo">
+
+      @if (
+        formularioPedido.controls.correo.invalid &&
+        formularioPedido.controls.correo.touched
+      ) {
+        <small class="error">
+          Ingrese un correo electrónico válido.
+        </small>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="producto">Producto</label>
+      <select id="producto" formControlName="producto">
+        <option value="">Seleccione un producto</option>
+        <option value="manzanas">Manzanas</option>
+        <option value="naranjas">Naranjas</option>
+        <option value="nueces">Nueces</option>
+        <option value="almendras">Almendras</option>
+      </select>
+
+      @if (
+        formularioPedido.controls.producto.invalid &&
+        formularioPedido.controls.producto.touched
+      ) {
+        <small class="error">
+          Debe seleccionar un producto.
+        </small>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="cantidad">Cantidad</label>
+      <input
+        id="cantidad"
+        type="number"
+        min="1"
+        formControlName="cantidad">
+    </div>
+
+    <div class="campo">
+      <label for="direccion">Dirección de entrega</label>
+      <input
+        id="direccion"
+        type="text"
+        formControlName="direccion">
+
+      @if (
+        formularioPedido.controls.direccion.invalid &&
+        formularioPedido.controls.direccion.touched
+      ) {
+        <small class="error">
+          Ingrese una dirección válida.
+        </small>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="comentario">Comentario</label>
+      <textarea
+        id="comentario"
+        rows="4"
+        formControlName="comentario"></textarea>
+    </div>
+
+    <button type="submit">
+      Registrar Pedido
+    </button>
+
+  </form>
+
+</section>
