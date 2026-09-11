@@ -1,4 +1,41 @@
+# Anthony Rebolledo P
 # MuroEstudiantil
+# Una pagina web donde se publiquen noticias o informacion de un entorno academico
+
+
+# Requisitos:
+# Angular: npm install -g @angular/cli@22
+# Node:    descargar de pagina oficial
+
+
+# Ejecucion del proyecto: ng serve --open
+
+#Componentes;
+ components:
+    -Menu; Despliegue de menu
+    -cabacera: barra superior de la pagina 
+Page
+    -actividad
+    -contacto
+    -inicio
+    -descricion
+•	Nombre y breve descripción del proyecto.
+•	Versión de Angular utilizada.
+•	Instrucciones para instalar dependencias y ejecutar el proyecto.
+•	Descripción de las vistas o componentes principales.
+•	Descripción de las rutas implementadas.
+•	Descripción del formulario y sus validaciones.
+•	Registro de las cuatro etapas de desarrollo y explicación de lo incorporado en cada commit.
+
+
+
+
+
+
+
+
+
+
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.8.
 
