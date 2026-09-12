@@ -1,39 +1,58 @@
 # Anthony Rebolledo P
 # MuroEstudiantil
-# Una pagina web donde se publiquen noticias o informacion de un entorno academico
+# Una pagina web donde se publiquen noticias o informacion de talleres de un entorno academico
 
 
-# Requisitos:
-# Angular: npm install -g @angular/cli@22
-# Node:    descargar de pagina oficial
+# Requisitos antes de la instalacion:
+#Angular:   npm install -g @angular/cli@22
+#Node:      descargar de pagina oficial
+#npm:       npm install
+#Ejecucion del proyecto: ng serve --open
 
-
-# Ejecucion del proyecto: ng serve --open
-
-#Componentes;
+# Componentes;
  components:
     -Menu; Despliegue de menu
     -cabacera: barra superior de la pagina 
-Page
-    -actividad
-    -contacto
-    -inicio
-    -descricion
-•	Nombre y breve descripción del proyecto.
-•	Versión de Angular utilizada.
-•	Instrucciones para instalar dependencias y ejecutar el proyecto.
-•	Descripción de las vistas o componentes principales.
-•	Descripción de las rutas implementadas.
-•	Descripción del formulario y sus validaciones.
-•	Registro de las cuatro etapas de desarrollo y explicación de lo incorporado en cada commit.
+# Pages:
+    -actividad:    Muestra los talleres
+    -contacto:     Informacion de contactos
+    -inicio:       Pagina princial
+    -incripcion:   formulario para registrar las tareas
 
 
+# Rutas implementadas:
+
+- inicio → vista de inicio
+- actividades → vista de actividades
+- inscripcion → vista del formulario de inscripción
+- contacto → vista de contacto
+- cabeceras → componente de cabecera
+- menu → componente de menú
 
 
+# Formulario y validacion: 
+  -Nombre:   minimo 3 caracteres          /obligatorio
+  -Apellido: minimo 3 caracteres          /obligatorio
+  -Correo electronico: formato valido     /obligatorio
+  -carrera:     obligatoria
+  -Actividad:   obligatoria
+  -Jornada:     obligatoria
+  -Comentario: opcional
+
+  
 
 
+# Registro etapas:
+
+# Etapa N°1: Se creo la estructura con ANGULAR y se configuro las variables de entorno
+# Etapa N°2: se añadieron los componentes
+# Etapa N°3: Se implemento el formulario responsivo
+# Etapa N°4: Se valido todo y se hizo el commit final
 
 
+# ImAgnenes de Pruebas:
+
+![alt text](<Captura de pantalla 2026-09-11 212744.png>) ![alt text](<Captura de pantalla 2026-09-11 212915.png>)
 
 
 

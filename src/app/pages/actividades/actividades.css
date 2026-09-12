@@ -1,0 +1,29 @@
+.contenedor-actividades {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.grid-actividades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.actividad {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  transition: transform 0.2s ease;
+}
+
+.actividad:hover {
+  transform: scale(1.05);
+  background-color: #eef;
+}
+
+.actividad h3 {
+  margin-top: 0;
+  color: #007bff;
+}
