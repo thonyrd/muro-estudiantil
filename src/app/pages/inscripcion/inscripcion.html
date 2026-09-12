@@ -24,6 +24,24 @@
       }
     </div>
 
+
+    <div class="campo">
+      <label for="apellido">Apellido</label>
+      <input
+        id="apellido"
+        type="text"
+        formControlName="apellido">
+
+      @if (
+        formularioPedido.controls.apellido.invalid &&
+        formularioPedido.controls.apellido.touched
+      ) {
+        <small class="error">
+          Ingrese un apellido válido de al menos 3 caracteres.
+        </small>
+      }
+    </div>
+
     <div class="campo">
       <label for="correo">Correo electrónico</label>
       <input
@@ -41,51 +59,64 @@
       }
     </div>
 
+
     <div class="campo">
-      <label for="producto">Producto</label>
-      <select id="producto" formControlName="producto">
-        <option value="">Seleccione un producto</option>
-        <option value="manzanas">Manzanas</option>
-        <option value="naranjas">Naranjas</option>
-        <option value="nueces">Nueces</option>
-        <option value="almendras">Almendras</option>
+      <label for="carrera">Carrera</label>
+      <input
+        id="carrera"
+        type="text"
+        formControlName="carrera">
+
+      @if (
+        formularioPedido.controls.carrera.invalid &&
+        formularioPedido.controls.carrera.touched
+      ) {
+        <small class="error">
+          Ingrese una carrera válida.
+        </small>
+      }
+    </div>
+
+
+
+    <div class="campo">
+      <label for="actividad">actividad</label>
+      <select id="actividad" formControlName="actividad">
+        <option value="">Seleccione un actividad</option>
+        <option value="Basquetball">Basquetball</option>
+        <option value="Tenis">Tenis</option>
+        <option value="Futball">Futball</option>
+        <option value="Atletismo">Atletismo</option>
       </select>
 
       @if (
-        formularioPedido.controls.producto.invalid &&
-        formularioPedido.controls.producto.touched
+        formularioPedido.controls.actividad.invalid &&
+        formularioPedido.controls.actividad.touched
       ) {
         <small class="error">
-          Debe seleccionar un producto.
+          Debe seleccionar un actividad.
         </small>
       }
     </div>
 
-    <div class="campo">
-      <label for="cantidad">Cantidad</label>
-      <input
-        id="cantidad"
-        type="number"
-        min="1"
-        formControlName="cantidad">
-    </div>
-
-    <div class="campo">
-      <label for="direccion">Dirección de entrega</label>
-      <input
-        id="direccion"
-        type="text"
-        formControlName="direccion">
+<div class="campo">
+      <label for="jornada">jornada</label>
+      <select id="jornada" formControlName="jornada">
+        <option value="">Seleccione una jornada</option>
+        <option value="mañana">Mañana</option>
+        <option value="tarde">Tarde</option>
+      </select>
 
       @if (
-        formularioPedido.controls.direccion.invalid &&
-        formularioPedido.controls.direccion.touched
+        formularioPedido.controls.jornada.invalid &&
+        formularioPedido.controls.jornada.touched
       ) {
         <small class="error">
-          Ingrese una dirección válida.
+          Debe seleccionar una jornada.
         </small>
       }
-    </div>
+</div>
+
 
     <div class="campo">
       <label for="comentario">Comentario</label>
